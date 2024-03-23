@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\dao\\daodepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\dao\\daodepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\exceptions\\daoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\exceptions\\daoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\dao\\daocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\dao\\daocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\interfaces\\idaocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\interfaces\\idaocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\dao\\daostudentgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\dao\\daostudentgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\entities\\studentgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\entities\\studentgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\dao\\daostudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\dao\\daostudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\dao\\daoperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\dao\\daoperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\entities\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\interfaces\\idaodepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\interfaces\\idaodepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|d:\\cursos\\c#\\itla\\schoolprosite\\schoolprosite.dal\\interfaces\\idaoonlinecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5BEB8BE-ADA6-4F3F-B858-A4D266174BB5}|SchoolProSite.DAL\\SchoolProSite.DAL.csproj|solutionrelative:schoolprosite.dal\\interfaces\\idaoonlinecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,31 +45,44 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 864,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 1017,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "IDaoOnlineCourse.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoOnlineCourse.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Interfaces\\IDaoOnlineCourse.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoOnlineCourse.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Interfaces\\IDaoOnlineCourse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:01:25.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IDaoDepartment.cs",
               "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoDepartment.cs",
               "RelativeDocumentMoniker": "SchoolProSite.DAL\\Interfaces\\IDaoDepartment.cs",
               "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoDepartment.cs",
               "RelativeToolTip": "SchoolProSite.DAL\\Interfaces\\IDaoDepartment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T16:36:35.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DaoCourse.cs",
               "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoCourse.cs",
               "RelativeDocumentMoniker": "SchoolProSite.DAL\\Dao\\DaoCourse.cs",
               "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoCourse.cs",
               "RelativeToolTip": "SchoolProSite.DAL\\Dao\\DaoCourse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAxAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T17:08:19.63Z",
               "EditorCaption": ""
@@ -65,59 +90,85 @@
           ]
         },
         {
-          "DockedWidth": 931,
+          "DockedWidth": 818,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentGrade.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\StudentGrade.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Entities\\StudentGrade.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\StudentGrade.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Entities\\StudentGrade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:47:16.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DaoException.cs",
-              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Exceptions\\DaoException.cs",
-              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Exceptions\\DaoException.cs",
-              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Exceptions\\DaoException.cs",
-              "RelativeToolTip": "SchoolProSite.DAL\\Exceptions\\DaoException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABJAAAA",
+              "Title": "DaoStudentGrade.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoStudentGrade.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Dao\\DaoStudentGrade.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoStudentGrade.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Dao\\DaoStudentGrade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T19:16:31.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DaoDepartment.cs",
-              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoDepartment.cs",
-              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Dao\\DaoDepartment.cs",
-              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoDepartment.cs",
-              "RelativeToolTip": "SchoolProSite.DAL\\Dao\\DaoDepartment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T17:08:55.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IDaoCourse.cs",
-              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoCourse.cs",
-              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Interfaces\\IDaoCourse.cs",
-              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Interfaces\\IDaoCourse.cs",
-              "RelativeToolTip": "SchoolProSite.DAL\\Interfaces\\IDaoCourse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T17:04:01.474Z",
+              "WhenOpened": "2024-03-23T01:44:24.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Entities\\Department.cs",
-              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Department.cs",
-              "RelativeToolTip": "SchoolProSite.DAL\\Entities\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Entities\\Student.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Student.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Entities\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T16:38:07.636Z",
+              "WhenOpened": "2024-03-23T01:40:08.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DaoStudent.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoStudent.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Dao\\DaoStudent.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoStudent.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Dao\\DaoStudent.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:36:41.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DaoPerson.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoPerson.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Dao\\DaoPerson.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Dao\\DaoPerson.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Dao\\DaoPerson.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T01:22:54.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Instructor.cs",
+              "RelativeDocumentMoniker": "SchoolProSite.DAL\\Entities\\Instructor.cs",
+              "ToolTip": "D:\\Cursos\\C#\\ITLA\\SchoolProSite\\SchoolProSite.DAL\\Entities\\Instructor.cs",
+              "RelativeToolTip": "SchoolProSite.DAL\\Entities\\Instructor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T23:41:47.881Z",
               "EditorCaption": ""
             }
           ]

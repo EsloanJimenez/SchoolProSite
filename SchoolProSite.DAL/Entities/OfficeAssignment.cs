@@ -7,7 +7,7 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class OfficeAssignment
     {
-        public int InstructorId { get; set; }
+        public int OfficeAssignmentId { get; set; }
         public string Location { get; set; }
         public byte[] Timestamp { get; set; }
 

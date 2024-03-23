@@ -7,7 +7,7 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class OnlineCourse
     {
-        public int CourseId { get; set; }
+        public int OnlineCourseId { get; set; }
         public string Url { get; set; }
 
         public virtual Course Course { get; set; }

@@ -4,7 +4,7 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class Student : BasePerson
     {
-        public int Id { get; set; }
+        public int StudentId { get; set; }
 
         public DateTime? EnrollmentDate { get; set; }
     }

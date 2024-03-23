@@ -1,7 +1,7 @@
 ﻿namespace SchoolProSite.DAL.Exceptions
 {
-    public class DaoDepartmentException : Exception
+    public class DaoException : Exception
     {
-        public DaoDepartmentException(string message) : base(message) { }
+        public DaoException(string message) : base(message) { }
     }
 }

@@ -7,7 +7,7 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class OnsiteCourse
     {
-        public int CourseId { get; set; }
+        public int OnsiteCourseId { get; set; }
         public string Location { get; set; }
         public string Days { get; set; }
         public DateTime Time { get; set; }

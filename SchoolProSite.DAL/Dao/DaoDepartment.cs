@@ -1,5 +1,6 @@
 ﻿using SchoolProSite.DAL.Context;
 using SchoolProSite.DAL.Entities;
+using SchoolProSite.DAL.Enums;
 using SchoolProSite.DAL.Exceptions;
 using SchoolProSite.DAL.Interfaces;
 
@@ -15,14 +16,21 @@ namespace SchoolProSite.DAL.Dao
 
         public void SaveDepartment(Department department)
         {
-            if (this.ExistsDepartment(cd => cd.Name == department.Name))
-                throw new DaoDepartmentException("El departamento ya se encuentra registrado");
+            string message = string.Empty;
+
+            if (!IsDepartmentValid(department, ref message, Operations.Save))
+                throw new DaoException(message);
 
             this._context.Departments.Add(department);
             this._context.SaveChanges();
         }
-        public void UpgradeDepartment(Department department)
+        public void UpdateDepartment(Department department)
         {
+            string message = string.Empty;
+
+            if (!IsDepartmentValid(department, ref message, Operations.Update))
+                throw new DaoException(message);
+
             Department departmentToUpdate = this.GetDepartment(department.DepartmentId);
 
             departmentToUpdate.ModifyDate = department.ModifyDate;
@@ -38,6 +46,7 @@ namespace SchoolProSite.DAL.Dao
         public void DeleteDepartment(Department department)
         {
             Department departmentToRemove = this.GetDepartment(department.DepartmentId);
+
             departmentToRemove.Deleted = department.Deleted;
             departmentToRemove.DeletedDate = department.DeletedDate;
             departmentToRemove.UserDeleted = departmentToRemove.UserDeleted;
@@ -65,7 +74,39 @@ namespace SchoolProSite.DAL.Dao
         }
 
 
+        private bool IsDepartmentValid(Department department, ref string message, Operations operations)
+        {
+            bool result = false;
 
+            if (string.IsNullOrEmpty(department.Name))
+            {
+                message = "El nombre del departamento es requerido";
+                return result;
+            }
+            if (department.Name.Length > 50)
+            {
+                message = "El nombre del departamento no puede ser mayor a 50 caracteres";
+                return result;
+            }
+            if (department.Budget == 0)
+            {
+                message = "El presupuesto no puede ser cero(0)";
+                return result;
+            }
+            if(operations == Operations.Save)
+            {
+                if (this.ExistsDepartment(cd => cd.Name == department.Name))
+                {
+                    message = "El departamento ya se encuentra registrado";
+                    return result;
+                }
+                    
+            }
+            else
+                result = true;
+
+            return result;
+        }
 
     }
 }

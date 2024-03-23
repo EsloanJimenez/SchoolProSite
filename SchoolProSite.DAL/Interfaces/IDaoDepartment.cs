@@ -5,7 +5,7 @@ namespace SchoolProSite.DAL.Interfaces
     public interface IDaoDepartment
     {
         void SaveDepartment(Department department);
-        void UpgradeDepartment(Department department);
+        void UpdateDepartment(Department department);
         void DeleteDepartment(Department department);
         Department GetDepartment(int id);
         List<Department> GetDepartments();
