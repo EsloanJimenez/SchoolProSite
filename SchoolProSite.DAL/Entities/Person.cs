@@ -4,7 +4,9 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class Person : BasePerson
     {
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         public Person()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             StudentGrades = new HashSet<StudentGrade>();
             Courses = new HashSet<Course>();

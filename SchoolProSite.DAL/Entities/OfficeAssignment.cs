@@ -2,12 +2,14 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace SchoolProSite.DAL.Entities
 {
     public partial class OfficeAssignment
     {
-        public int OfficeAssignmentId { get; set; }
+        [Key]
+        public int InstructorID { get; set; }
         public string Location { get; set; }
         public byte[] Timestamp { get; set; }
 

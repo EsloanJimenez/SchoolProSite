@@ -3,6 +3,7 @@ using SchoolProSite.DAL.Entities;
 using SchoolProSite.DAL.Enums;
 using SchoolProSite.DAL.Exceptions;
 using SchoolProSite.DAL.Interfaces;
+using SchoolProSite.DAL.Models;
 
 namespace SchoolProSite.DAL.Dao
 {
@@ -15,60 +16,60 @@ namespace SchoolProSite.DAL.Dao
         }
         public void SaveCourse(Course course)
         {
-            string message = string.Empty;
+            try
+            {
+                string message = string.Empty;
 
-            if (!IsCourseValid(course, ref message, Operations.Save))
-                throw new DaoException(message);
+                if (!IsCourseValid(course, ref message, Operations.Save))
+                    throw new DaoCourseException(message);
 
-            this._context.Courses.Add(course);
-            this._context.SaveChanges();
+                this._context.Course.Add(course);
+                this._context.SaveChanges();
+            } catch(Exception ex)
+            {
+                throw new DaoCourseException(ex.Message);
+            }
         }
         public void UpdateCourse(Course course)
         {
-            string message = string.Empty;
+            try
+            {
+                string message = string.Empty;
 
-            if (!IsCourseValid(course, ref message, Operations.Update))
-                throw new DaoException(message);
+                if (!IsCourseValid(course, ref message, Operations.Update))
+                    throw new DaoCourseException(message);
 
-            Course courseToUpdated = this.GetCourse(course.CourseId);
+                Course? courseToUpdated = this._context.Course.Find(course.CourseId);
 
-            courseToUpdated.ModifyDate = course.ModifyDate;
-            courseToUpdated.Title = course.Title;
-            courseToUpdated.Credits = course.Credits;
-            courseToUpdated.UserMod = course.UserMod;
+                if (course is null)
+                    throw new DaoCourseException("No se encontro el curso especificado");
 
-            this._context.Courses.Update(courseToUpdated);
-            this._context.SaveChanges();
+
+                courseToUpdated.ModifyDate = DateTime.Now;
+                courseToUpdated.Title = course.Title;
+                courseToUpdated.Credits = course.Credits;
+                courseToUpdated.DepartmentId = course.DepartmentId;
+                courseToUpdated.UserMod = course.UserMod;
+
+                this._context.Course.Update(courseToUpdated);
+                this._context.SaveChanges();
+            } catch(Exception ex)
+            {
+                throw new DaoCourseException(ex.Message);
+            }
         }
         public void DeleteCourse(Course course)
         {
-            Course courseToRemove = this.GetCourse(course.CourseId);
+            CourseDaoModel courseToRemove = GetCourse(course.CourseId);
 
             courseToRemove.Deleted = course.Deleted;
             courseToRemove.DeletedDate = course.DeletedDate;
             courseToRemove.UserDeleted = course.UserDeleted;
 
-            this._context.Courses.Update(courseToRemove);
+            this._context.Update(courseToRemove);
             this._context.SaveChanges();
         }
-        public Course GetCourse(int id)
-        {
-            return this._context.Courses.Find(id);
-        }
-        public List<Course> GetCourses()
-        {
-            return this._context.Courses.ToList();
-        }
-        public bool ExistsCourse(Func<Course, bool> filter)
-        {
-            return this._context.Courses.Any(filter);
-        }
-
-        public List<Course> GetCourses(Func<Course, bool> filter)
-        {
-            return this._context.Courses.Where(filter).ToList();
-        }
-
+        
 
         private bool IsCourseValid(Course course, ref string message, Operations operations)
         {
@@ -105,5 +106,94 @@ namespace SchoolProSite.DAL.Dao
             return result;
         }
 
+        public CourseDaoModel GetCourse(int Id)
+        {
+            CourseDaoModel? courseDaoModel = new CourseDaoModel();
+
+            try
+            {
+                courseDaoModel = (from co in this._context.Course
+                             join depto in this._context.Departments on co.DepartmentId equals depto.DepartmentId
+                             where co.Deleted == false
+                             && co.CourseId == Id
+                             select new CourseDaoModel() 
+                             { 
+                                CourseId = co.CourseId,
+                                CreatedDate = co.CreationDate,
+                                Credits = co.Credits,
+                                DepartmentId = co.DepartmentId,
+                                DepartmentName = depto.Name,
+                                Title = co.Title
+                             }).FirstOrDefault();
+
+            } catch(Exception ex)
+            {
+                throw new DaoCourseException($"Error obteniendo el curso: {ex.Message}");
+            }
+            return courseDaoModel;
+        }
+
+        public List<CourseDaoModel> GetCourses()
+        {
+            List<CourseDaoModel>? courseList = new List<CourseDaoModel>();
+
+            try
+            {
+                courseList = (from course in this._context.Course
+                                  join depto in this._context.Departments on course.DepartmentId 
+                                                                          equals depto.DepartmentId
+                                  where course.Deleted == false
+                                  orderby course.CreationDate descending
+                                  select new CourseDaoModel()
+                                  {
+                                      CourseId = course.CourseId,
+                                      CreatedDate = course.CreationDate,
+                                      Credits = course.Credits,
+                                      DepartmentId = course.DepartmentId,
+                                      DepartmentName = depto.Name,
+                                      Title = course.Title
+                                  }).ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw new DaoCourseException($"Error obteniendo el curso: {ex.Message}");
+            }
+            return courseList;
+        }
+
+        public bool ExistsCourse(Func<Course, bool> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CourseDaoModel> GetCourses(Func<Course, bool> filter)
+        {
+            List<CourseDaoModel>? courseList = new List<CourseDaoModel>();
+
+            try
+            {
+                var courses = this._context.Course.Where(filter);
+
+                courseList = (from course in courses
+                              join depto in this._context.Departments.ToList()
+                              on course.DepartmentId equals depto.DepartmentId
+                              where course.Deleted == false
+                              select new CourseDaoModel()
+                              {
+                                  CourseId = course.CourseId,
+                                  CreatedDate = course.CreationDate,
+                                  Credits = course.Credits,
+                                  DepartmentId = course.DepartmentId,
+                                  DepartmentName = depto.Name,
+                                  Title = course.Title
+                              }).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new DaoCourseException($"Error obteniendo el curso: {ex.Message}");
+            }
+            return courseList;
+        }
     }
 }

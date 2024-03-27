@@ -33,7 +33,7 @@ namespace SchoolProSite.DAL.Dao
             if (!IsOnsiteCourseValid(onsiteCourse, ref message, Operations.Update))
                 throw new DaoException(message);
 
-            OnsiteCourse onsiteCourseToUpdated = this.GetOnsiteCourse(onsiteCourse.OnsiteCourseId);
+            OnsiteCourse onsiteCourseToUpdated = this.GetOnsiteCourse(onsiteCourse.CourseId);
 
             onsiteCourseToUpdated.Location = onsiteCourse.Location;
             onsiteCourseToUpdated.Days = onsiteCourse.Days;
@@ -43,7 +43,7 @@ namespace SchoolProSite.DAL.Dao
         }
         public void DeleteOnsiteCourse(OnsiteCourse onsiteCourse)
         {
-            OnsiteCourse OnsiteCourseToRemove = this.GetOnsiteCourse(onsiteCourse.OnsiteCourseId);
+            OnsiteCourse OnsiteCourseToRemove = this.GetOnsiteCourse(onsiteCourse.CourseId);
 
             this._context.OnsiteCourse.Update(OnsiteCourseToRemove);
             this._context.SaveChanges();

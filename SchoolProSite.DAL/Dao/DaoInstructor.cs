@@ -32,7 +32,7 @@ namespace SchoolProSite.DAL.Dao
             if (!IsInstructorValid(instructor, ref message, Operations.Update))
                 throw new DaoException(message);
             
-            Instructor instructorToUpdate = this.GetInstructor(instructor.InstructorId);
+            Instructor instructorToUpdate = this.GetInstructor(instructor.Id);
 
             instructorToUpdate.ModifyDate = instructor.ModifyDate;
             instructorToUpdate.LastName = instructor.LastName;
@@ -45,7 +45,7 @@ namespace SchoolProSite.DAL.Dao
         }
         public void DeleteInstructor(Instructor instructor)
         {
-            Instructor instructorToRemove = this.GetInstructor(instructor.InstructorId);
+            Instructor instructorToRemove = this.GetInstructor(instructor.Id);
 
             instructorToRemove.ModifyDate = instructor.ModifyDate;
             instructorToRemove.LastName = instructor.LastName;

@@ -1,0 +1,13 @@
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\bin\Debug\net6.0\SchoolProSite.DAL.deps.json
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\bin\Debug\net6.0\SchoolProSite.DAL.dll
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\bin\Debug\net6.0\SchoolProSite.DAL.pdb
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.csproj.AssemblyReference.cache
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.AssemblyInfoInputs.cache
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.AssemblyInfo.cs
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.csproj.CoreCompileInputs.cache
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.sourcelink.json
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.dll
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\refint\SchoolProSite.DAL.dll
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\SchoolProSite.DAL.pdb
+D:\Cursos\C#\ITLA\SchoolProSite\SchoolProSite.DAL\obj\Debug\net6.0\ref\SchoolProSite.DAL.dll

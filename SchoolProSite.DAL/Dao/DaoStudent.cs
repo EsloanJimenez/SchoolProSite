@@ -34,7 +34,7 @@ namespace SchoolProSite.DAL.Dao
             if (!IsStudentValid(student, ref message, Operations.Update))
                 throw new DaoException(message);
 
-            Student studentToUpdated = this.GetStudent(student.StudentId);
+            Student studentToUpdated = this.GetStudent(student.Id);
 
             studentToUpdated.ModifyDate = student.ModifyDate;
             studentToUpdated.LastName = student.LastName;
@@ -46,7 +46,7 @@ namespace SchoolProSite.DAL.Dao
         }
         public void DeleteStudent(Student student)
         {
-            Student studentToRemove = this.GetStudent(student.StudentId);
+            Student studentToRemove = this.GetStudent(student.Id);
 
             studentToRemove.Deleted = student.Deleted;
             studentToRemove.DeletedDate = student.DeletedDate;

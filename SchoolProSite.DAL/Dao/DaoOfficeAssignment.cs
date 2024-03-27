@@ -30,7 +30,7 @@ namespace SchoolProSite.DAL.Dao
             if (!IsOfficeAssignmentValid(officeAssignment, ref message, Operations.Update))
                 throw new DaoException(message);
 
-            OfficeAssignment officeAssignmentToUpdated = this.GetOfficeAssignment(officeAssignment.OfficeAssignmentId);
+            OfficeAssignment officeAssignmentToUpdated = this.GetOfficeAssignment(officeAssignment.InstructorID);
 
             officeAssignmentToUpdated.Location = officeAssignment.Location;
 
@@ -39,7 +39,7 @@ namespace SchoolProSite.DAL.Dao
         }
         public void DeleteOfficeAssignment(OfficeAssignment officeAssignment)
         {
-            OfficeAssignment officeAssignmentToRemove = this.GetOfficeAssignment(officeAssignment.OfficeAssignmentId);
+            OfficeAssignment officeAssignmentToRemove = this.GetOfficeAssignment(officeAssignment.InstructorID);
 
             this._context.OfficeAssignments.Update(officeAssignmentToRemove);
             this._context.SaveChanges();

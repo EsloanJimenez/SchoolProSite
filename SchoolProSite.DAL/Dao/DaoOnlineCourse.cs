@@ -30,7 +30,7 @@ namespace SchoolProSite.DAL.Dao
             if (!IsOnlineCourseValid(onlineCourse, ref message, Operations.Update))
                 throw new DaoException(message);
 
-            OnlineCourse onlineCourseToUpdated = this.GetOnlineCourse(onlineCourse.OnlineCourseId);
+            OnlineCourse onlineCourseToUpdated = this.GetOnlineCourse(onlineCourse.CourseID);
 
             onlineCourseToUpdated.Url = onlineCourse.Url;
 
@@ -39,7 +39,7 @@ namespace SchoolProSite.DAL.Dao
         }
         public void DeleteOnlineCourse(OnlineCourse onlineCourse)
         {
-            OnlineCourse onlineCourseToRemove = this.GetOnlineCourse(onlineCourse.OnlineCourseId);
+            OnlineCourse onlineCourseToRemove = this.GetOnlineCourse(onlineCourse.CourseID);
 
             this._context.OnlineCourse.Update(onlineCourseToRemove);
             this._context.SaveChanges();

@@ -7,12 +7,10 @@ namespace SchoolProSite.DAL.Entities
 {
     public partial class Department : BaseEntities
     {
-        /*
         public Department()
         {
             Courses = new HashSet<Course>();
         }
-        */
 
         public int DepartmentId { get; set; }
 
